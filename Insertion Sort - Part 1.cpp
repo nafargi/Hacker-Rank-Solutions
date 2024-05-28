@@ -7,24 +7,23 @@ string rtrim(const string &);
 vector<string> split(const string &);
 
 void insertionSort1(int n, vector<int> arr) {
-    
-     int num = n;
-    int temp = arr.back();
-    for(int i = 0; i <num-1; i++) {
-        n--;
-        if(temp > arr[arr.size() - i-2]){
-            for (int j = 0; j < arr.size() ; j++) {
-                arr[n] = temp;
-                cout << arr[j] << " ";
-            }
-        } else{
-            for (int j = 0; j < arr.size() ; j++) {
-                arr[n] = arr[arr.size() - i-2];
-                cout << arr[j] << " ";
-            }
-            cout<<endl;
+    int temp = arr.back(); // Last element to be inserted
+    int i = n - 2; // Start from the second last element
+
+    while (i >= 0 && arr[i] > temp) {
+        arr[i + 1] = arr[i]; // Shift element to the right
+        for (int j = 0; j < n; j++) {
+            cout << arr[j] << " ";
         }
-      }
+        cout << endl;
+        i--;
+    }
+
+    arr[i + 1] = temp; // Place temp in its correct position
+    for (int j = 0; j < n; j++) {
+        cout << arr[j] << " ";
+    }
+    cout << endl;
 }
 
 int main()
