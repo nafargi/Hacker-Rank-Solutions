@@ -7,7 +7,7 @@ string rtrim(const string &);
 vector<string> split(const string &);
 
 void insertionSort1(int n, vector<int> arr) {
-    int temp = arr.back(); // Last element to be inserted
+    int temp = arr.back(); 
     int i = n - 2; // Start from the second last element
 
     while (i >= 0 && arr[i] > temp) {
