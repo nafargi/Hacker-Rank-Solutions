@@ -18,7 +18,7 @@ void insertionSort1(int n, vector<int> arr) {
         i--;
     }
 
-    arr[i + 1] = temp; // Place temp in its correct position
+    arr[i + 1] = temp;
     for (int j = 0; j < n; j++) {
         cout << arr[j] << " ";
     }
