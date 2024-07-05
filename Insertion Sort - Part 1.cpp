@@ -10,7 +10,7 @@ void insertionSort1(int n, vector<int> arr) {
     int temp = arr.back(); 
     int i = n - 2; 
     while (i >= 0 && arr[i] > temp) {
-        arr[i + 1] = arr[i]; // Shift element to the right
+        arr[i + 1] = arr[i]; 
         for (int j = 0; j < n; j++) {
             cout << arr[j] << " ";
         }
