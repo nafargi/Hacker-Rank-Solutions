@@ -24,7 +24,7 @@ void insertionSort1(int n, vector<int> arr) {
     }
     cout << endl;
 } 
-q1q1q1q1q
+q1q1q1q1
 
 int main()
 {
