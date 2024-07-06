@@ -60,7 +60,6 @@ string ltrim(const string &str) {
 
     return s;
 }
-xx
 string rtrim(const string &str) {
     string s(str);
 
